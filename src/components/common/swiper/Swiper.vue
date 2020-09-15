@@ -19,11 +19,11 @@
     props: {
       interval: {
 		    type: Number,
-        default: 30000
+        default: 3000
       },
       animDuration: {
 		    type: Number,
-        default: 3000
+        default: 500
       },
       moveRatio: {
         type: Number,
@@ -50,7 +50,7 @@
 
         // 2.开启定时器
         this.startTimer();
-      }, 30000)
+      }, 300)
     },
     methods: {
 		  /**

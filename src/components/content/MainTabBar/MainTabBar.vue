@@ -17,7 +17,7 @@
       <template v-slot:item-icon-active>
         <img  src="~assets/img/tabbar/category_active.svg" alt=""/>
       </template>
-      <template v-slot:item-text>首页</template>
+      <template v-slot:item-text>分类</template>
     </tab-bar-item>
 
     <tab-bar-item link="/cart" activeColor="pink">
@@ -27,7 +27,7 @@
       <template v-slot:item-icon-active>
         <img src="~assets/img/tabbar/cart_active.svg" alt=""/>
       </template>
-      <template v-slot:item-text>首页</template>
+      <template v-slot:item-text>购物车</template>
     </tab-bar-item>
 
     <tab-bar-item link="/profile" activeColor="pink">
@@ -37,7 +37,7 @@
       <template v-slot:item-icon-active>
         <img  src="~assets/img/tabbar/profile_active.svg" alt=""/>
       </template>
-      <template v-slot:item-text>首页</template>
+      <template v-slot:item-text>我的</template>
     </tab-bar-item>
   </tab-bar>
 </template>
@@ -55,4 +55,12 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.tab-bar-item img{
+  height: 25px;
+  width: 25px;
+  margin-top: 3px;
+  vertical-align: middle; /* 去除图片下面空白 */
+  margin-bottom: 2px;
+}
+</style>
